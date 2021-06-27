@@ -17,6 +17,20 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* Scrollbar.. */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgb(209, 170, 215), rgb(200, 139, 196) 25.17%, rgb(123, 143, 221) 50%, rgb(134, 191, 242) 73.09%, rgb(187, 222, 242));;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: transparent; /* opacity: 0; should do the thing either */
+    box-shadow: 0px 0px 0px 100000vh black;
+    border-radius: 10px;
+  }
 /* Navigation bar */
 #logo, .logo-container{
     height: 7vh; 
