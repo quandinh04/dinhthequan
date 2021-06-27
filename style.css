@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+body{ 
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/milky-way-starry-sky-night-sky-star-956999.jpeg');
+    
+}
+.gradient-text{
+    background: linear-gradient(90deg, rgb(209, 170, 215), rgb(200, 139, 196) 25.17%, rgb(123, 143, 221) 50%, rgb(134, 191, 242) 73.09%, rgb(187, 222, 242));;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Navigation bar */
+#logo, .logo-container{
+    height: 7vh; 
+    padding-left: 4vw;
+    z-index: 2;
+}
+nav{
+    height: 7vh;
+    width: 100%;
+    position:fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    left: 0px;
+    top: 0px;
+    padding: 10px 0 10px 0;
+
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-between;
+    
+}   
+
+/* Links inside nav bar */
+.nav-items-wrapper{
+    display: flex;
+    padding-right: 7vw;
+}
+.nav-items-wrapper li{
+    list-style: none;
+    padding-left: 6vw;
+}
+.nav-items-wrapper li a{
+    text-decoration: none;
+    
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+.nav-items-wrapper li a:hover{
+    color:plum;
+}
+
+/* First section */
+#pg1 {
+    height: 100vh;
+    padding: 7vh 10vw 7vh 10vw;
+    position: relative;
+    display: flex;
+}
+#pg1 div{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* First section: left */
+.pg1-content-main-text{  
+    font-size: 5rem;
+    line-height: 6rem;
+}
+.pg1-content-sub-text{ 
+    font-size: 1.5rem;
+    padding: 2vh 0 1vh 0;
+    line-height: 2rem;
+}
+/* Second section: About (Summary ver)*/
+#pg2{
+    height: auto;
+    padding: 7vh 10vw 7vh 10vw;
+    position: relative;
+    display: flex;
+}
+#pg2 div {
+    flex: 1;
+    display: flex ;
+    flex-direction: column;
+}
+#avatar{
+    width: 50% ;
+    border-radius: 50%;
+}
+.pg2-content-main-text{  
+    font-size: 2.5rem;
+    padding-bottom: 3vh;
+}
+.pg2-content-sub-text{
+    line-height: 26px;
+}
+.read-more{
+    margin-top: 8vh;
+    margin-left: 27vw;
+    border-radius: 25px;
+    padding: 2px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    font-weight: 100
+}
+.read-more a{
+    transition: all 0.3s ease;
+}
+.read-more:hover{
+    border-color: plum;
+    color: plum;
+}
+/* Third section */
+#pg3{
+    height: 110vh;
+    padding: 7vh 10vw 7vh 10vw;
+    position: relative;
+}
+.pg3-content-main-text{
+    font-size: 2.5rem;
+    padding-bottom: 4vh;
+    text-align: center;
+  }
+
+@media screen and (min-width: 900px){
+.content{
+    width: 33.33333%;
+    }
+}
+.content {
+position: relative;
+margin: auto;
+overflow: hidden;
+float: left;
+width: 33.3333%;
+}
+
+.content .content-overlay {
+background: rgba(0,0,0,0.7);
+position: absolute;
+height: 98%;
+width: 100%;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+opacity: 0;
+transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+opacity: 1;
+}
+
+.content-image{
+width: 100%;
+}
+
+.content-details {
+position: absolute;
+text-align: center;
+width: 100%;
+top: 50%;
+left: 50%;
+opacity: 0;
+transform: translate(-50%, -50%);
+transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+top: 50%;
+left: 50%;
+opacity: 1;
+}
+
+.content-details h3{
+letter-spacing: 0.15em;
+margin-bottom: 0.5em;
+text-transform: uppercase;
+}
+
+.content-details p{
+font-size: 0.8rem;
+}
+
+.fadeIn-bottom{
+top: 60%;
+}
+/* Footer */
+footer{
+    height: auto;
+    padding: 0 10vw 0 10vw;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contacts-title{
+    font-size: 2rem;
+}
+.contacts-content p{
+    padding-bottom: 2vh;
+}
+/* Footer: Social Media Icons */
+.social-media-icons{
+    display: flex;
+    
+}
+.social-media-icons li{
+    list-style: none;
+    padding: 10px;
+}
+#facebook, #instagram, #linkedin, #youtube, #github{
+    transition: all 0.5s ease; 
+    transform: scale(0.8); 
+}
+a:hover #facebook {
+    fill:#4267B2;
+}
+a:hover #instagram{
+    fill:#C13584;
+}
+a:hover #linkedin {
+    fill:#00a0dc;
+}
+a:hover #github{
+    fill:#ffffff;
+}
+a:hover #youtube{
+    fill:#FF0000;
+}
+.copyright{
+    font-size: 0.75rem;
+    padding-bottom: 2vh;
+}
