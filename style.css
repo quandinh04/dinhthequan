@@ -58,6 +58,7 @@ nav{
     display: flex;
     padding-right: 7vw;
 }
+
 .nav-items-wrapper li{
     list-style: none;
     padding-left: 6vw;
