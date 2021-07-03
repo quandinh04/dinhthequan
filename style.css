@@ -16,6 +16,7 @@ body{
 .gradient-text{
     background: linear-gradient(90deg, rgb(209, 170, 215), rgb(200, 139, 196) 25.17%, rgb(123, 143, 221) 50%, rgb(134, 191, 242) 73.09%, rgb(187, 222, 242));;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /* Scrollbar.. */
@@ -169,6 +170,7 @@ nav{
     width: 33.33333%;
     }
 }
+
 .content {
 position: relative;
 margin: auto;

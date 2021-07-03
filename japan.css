@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+body{ 
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/milky-way-starry-sky-night-sky-star-956999.jpeg');
+    
+}
+/* Gradient-text color sample */
+.gradient-text{
+    background: linear-gradient(90deg, rgb(209, 170, 215), rgb(200, 139, 196) 25.17%, rgb(123, 143, 221) 50%, rgb(134, 191, 242) 73.09%, rgb(187, 222, 242));;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Scrollbar.. */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgb(209, 170, 215), rgb(200, 139, 196) 25.17%, rgb(123, 143, 221) 50%, rgb(134, 191, 242) 73.09%, rgb(187, 222, 242));;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent; /* opacity: 0; should do the thing either */
+    box-shadow: 0px 0px 0px 100000vh black;
+    border-radius: 10px;
+}
+
+/* Navigation bar */
+#logo, .logo-container{
+    height: 7vh; 
+    padding-left: 4vw;
+    z-index: 2;
+}
+
+nav{
+    height: 7vh;
+    width: 100%;
+    position:fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    left: 0px;
+    top: 0px;
+    padding: 10px 0 10px 0;
+
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-between;
+}   
+
+/* Links inside nav bar */
+.nav-items-wrapper{
+    display: flex;
+    padding-right: 7vw;
+}
+
+.nav-items-wrapper li{
+    list-style: none;
+    padding-left: 6vw;
+}
+
+.nav-items-wrapper li a{
+    text-decoration: none;
+    
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+.nav-items-wrapper li a:hover{
+    color:plum;
+}
+/* First section */
+.pg1 {
+    height: 70vh;
+    padding: 7vh 10vw 7vh 10vw;
+    position: relative;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url('images/IMG_2684.png');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.pg1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#japan-svg{
+    padding: 5vh 0 5vh 0;
+}
+.pg1-content h1{
+    font-size: 3em;
+}
+/* Grid gallery */
+.pg2{
+    height: auto;
+    padding: 7vh 10vw 7vh 10vw;
+    position: relative;
+}
+.grid-gallery{
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   24px;
+    -moz-column-count:    3;
+    -moz-column-gap:      24px;
+    column-count:         3;
+    column-gap:           24px;
+    }
+main img{
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 24px;
+}
+@media(max-width: 900px){
+    .grid-gallery{
+        -webkit-column-count: 2;
+        -moz-column-count:    2;
+        column-count:         2;
+        -webkit-column-gap:   0;
+        -moz-column-gap:      0;
+        column-gap:           0;
+    }
+    main img{
+        padding-bottom: 0 !important;
+    }
+}
+main img{
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 24px;
+}
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox div {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+/* Footer */
+footer{
+    height: auto;
+    padding: 0 10vw 0 10vw;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacts-title{
+    font-size: 2rem;
+}
+
+.contacts-content p{
+    padding-bottom: 2vh;
+}
+
+/* Footer: Social Media Icons */
+.social-media-icons{
+    display: flex;
+}
+
+.social-media-icons li{
+    list-style: none;
+    padding: 10px;
+}
+
+#facebook, #instagram, #linkedin, #youtube, #github{
+    transition: all 0.5s ease; 
+    transform: scale(0.8); 
+}
+
+a:hover #facebook {
+    fill:#4267B2;
+}
+
+a:hover #instagram{
+    fill:#C13584;
+}
+
+a:hover #linkedin {
+    fill:#00a0dc;
+}
+
+a:hover #github{
+    fill:#ffffff;
+}
+
+a:hover #youtube{
+    fill:#FF0000;
+}
+
+.copyright{
+    font-size: 0.75rem;
+    padding-bottom: 2vh;
+}
+
+
