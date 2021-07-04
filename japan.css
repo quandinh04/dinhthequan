@@ -138,6 +138,13 @@ main img{
     width: 100% !important;
     height: auto !important;
     padding-bottom: 24px;
+    transition: all 0.4s ease-in-out 0s;
+}
+figure{
+    overflow: hidden;
+}
+figure:hover img{
+    transform: scale(1.3);
 }
 .lightbox {
     /* Default to hidden */
