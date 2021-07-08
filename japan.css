@@ -147,7 +147,7 @@ main img{
     bottom: 0;
   
     /* A bit of padding around image */
-    padding: 1em;
+    padding: 1rem;
   
     /* Translucent background */
     background: rgba(0, 0, 0, 0.8);
@@ -169,7 +169,7 @@ main img{
     background-repeat: no-repeat;
     background-size: contain;
   }
-
+  
 /* Footer */
 footer{
     height: auto;
