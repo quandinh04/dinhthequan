@@ -105,14 +105,14 @@ nav{
 }
 
 /* Second section: About (Summary ver)*/
-#pg2{
+#about{
     height: auto;
     padding: 7vh 10vw 7vh 10vw;
     position: relative;
     display: flex;
 }
 
-#pg2 div {
+#about div {
     flex: 1;
     display: flex ;
     flex-direction: column;
@@ -123,12 +123,12 @@ nav{
     border-radius: 50%;
 }
 
-.pg2-content-main-text{  
+.about-content-main-text{  
     font-size: 2.5rem;
     padding-bottom: 3vh;
 }
 
-.pg2-content-sub-text{
+.about-content-sub-text{
     line-height: 26px;
 }
 
@@ -153,13 +153,13 @@ nav{
 }
 
 /* Third section */
-#pg3{
+#gallery{
     height: 110vh;
     padding: 7vh 10vw 7vh 10vw;
     position: relative;
 }
 
-.pg3-content-main-text{
+.gallery-content-main-text{
     font-size: 2.5rem;
     padding-bottom: 4vh;
     text-align: center;
