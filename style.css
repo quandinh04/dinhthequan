@@ -151,6 +151,15 @@ nav{
     border-color: plum;
     color: plum;
 }
+@media screen and (max-width: 920px){
+    #about{
+        flex-direction: column;
+        padding: 7vh 3vw 7vh 3vw;
+        display: flex;
+    }
+}
+
+   
 
 /* Third section */
 #gallery{
@@ -164,12 +173,6 @@ nav{
     padding-bottom: 4vh;
     text-align: center;
   }
-
-@media screen and (min-width: 900px){
-.content{
-    width: 33.33333%;
-    }
-}
 
 .content {
 position: relative;
@@ -231,6 +234,15 @@ font-size: 0.8rem;
 top: 60%;
 }
 
+@media screen and (max-width: 920px){
+    #gallery{
+        padding: 7vh 3vw 7vh 3vw;
+    }
+    .content{
+        width: 50%;
+        }
+    }
+    
 /* Footer */
 footer{
     height: auto;

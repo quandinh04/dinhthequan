@@ -133,6 +133,11 @@ main img{
     main img{
         padding-bottom: 0 !important;
     }
+    .pg2{
+        height: auto;
+        padding: 7vh 3vw 7vh 3vw;
+        position: relative;
+    }
 }
 .lightbox {
     /* Default to hidden */
