@@ -111,7 +111,6 @@ nav{
     position: relative;
     display: flex;
 }
-
 #about div {
     flex: 1;
     display: flex ;
@@ -122,12 +121,10 @@ nav{
     width: 50% ;
     border-radius: 50%;
 }
-
 .about-content-main-text{  
     font-size: 2.5rem;
     padding-bottom: 3vh;
 }
-
 .about-content-sub-text{
     line-height: 26px;
 }
@@ -158,8 +155,6 @@ nav{
         display: flex;
     }
 }
-
-   
 
 /* Third section */
 #gallery{
