@@ -7,6 +7,11 @@
     color: #ffffff;
     scroll-behavior: smooth;
 }
+@media screen and (max-width: 920px){
+    *{
+        font-size: 12px;
+    }
+}
 body{ 
     height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/milky-way-starry-sky-night-sky-star-956999.jpeg');
@@ -102,6 +107,17 @@ nav{
     font-size: 1.5rem;
     padding: 2vh 0 1vh 0;
     line-height: 2rem;
+}
+@media screen and (max-width: 920px){
+    #cat-pic{
+        display: none;
+    }
+    .pg1-pic{
+        display: none !important;
+    }
+    #pg1 div{ 
+        width: 100%;
+    }
 }
 
 /* Second section: About (Summary ver)*/
@@ -305,3 +321,5 @@ a:hover #youtube{
     font-size: 0.75rem;
     padding-bottom: 2vh;
 }
+
+
