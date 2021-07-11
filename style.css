@@ -103,6 +103,11 @@ nav{
     padding: 2vh 0 1vh 0;
     line-height: 2rem;
 }
+@media screen and (max-width: 920px){
+    .pg1-pic{
+        display: none;
+    }
+}
 
 /* Second section: About (Summary ver)*/
 #about{
